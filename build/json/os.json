@@ -1,0 +1,14 @@
+{
+    "items" : [
+        {
+            "name": "Linux",
+            "icon": "linux.png"
+        }, {
+            "name": "Windows",
+            "icon": "windows.png"
+        }, {
+            "name": "MacOS",
+            "icon": "macos.png"
+        }
+    ]
+}
