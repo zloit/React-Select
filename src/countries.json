@@ -1,0 +1,17 @@
+{
+    "items" : [
+        {
+            "name": "Америка",
+            "icon": "united-kingdom.png"
+        }, {
+            "name": "Румыния",
+            "icon": "romania.png"
+        }, {
+            "name": "Россия",
+            "icon": "russia.png"
+        }, {
+            "name": "Германия",
+            "icon": "flag.png"
+        }
+    ]
+}

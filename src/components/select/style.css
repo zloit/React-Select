@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.select__container {
+    display: flex;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 19px;
+}
+
+.select__input {
+    line-height: .9em;
+    flex-basis: 100%;
+    padding: .8em;
+    outline: none;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+    background: none;
+    font-size: inherit;
+}
+
+.select__list {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: 2.7em;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+.select__list_display {
+    display: flex;
+}
+.select__main-icon {
+    width: 2.5em;
+    height: 2.5em;
+}
+.input__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: #fff;
+    transition: .5s;
+}
+
+.input__wrapper:hover, .input__wrapper_focus {
+    background-color: #FF908B;
+}
+
+.input__close {
+    width: 2em;
+    margin-right: .3em;
+    cursor: pointer;
+}
+.input__close::after {
+    content: '';
+    background: #fff;
+}
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item__icon {
+    width: 2.5em;
+    height: 2.5em;
+    padding-right: 0.5em;
+    cursor: pointer;
+}
+
+.list-item__text {
+    font-size: inherit;
+    padding: 1em;
+    cursor: pointer;
+    width: 75%;
+    overflow: hidden;
+}
+
+.list-item_selected, .list-item:hover {
+    background-color: #FF908B;
+}
+
+.select__label-text {
+    position: absolute;
+    transition: .3s;
+    pointer-events: none;
+    left: 1em;
+    top: .8em;
+}
+
+.input__wrapper_focus~.select__label-text,
+.select__label-text_small
+{
+    top: 0.1em;
+    font-size: 0.6em;
+    left: 0.3em;
+    opacity: .5;
+}
