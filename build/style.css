@@ -7,11 +7,18 @@ body {
 .wrapper {
     width: 500px;
     font-size: 1rem;
-    font-style: Impact;
     color: #FF908B;
     font-family: 'Montserrat';
 }
 
 .block {
     margin: 4rem;
+}
+p {
+    line-height: 1.4em;
+    font-size: 1.1em;
+}
+.white {
+    color: white;
+    text-transform: uppercase;
 }
