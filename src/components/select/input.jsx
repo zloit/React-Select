@@ -9,7 +9,7 @@ class Input extends React.Component {
         const labelClassName = this.props.inputValue.length !== 0 ? 'select__label-text select__label-text_small' : 'select__label-text'
 
         return (       
-            <div className={wrapperClassName} onClick={() => showList()}>
+            <div className={wrapperClassName} style={this.props.inputStyle} onClick={() => showList()}>
                 <input 
                     type="text" 
                     className='select__input' 

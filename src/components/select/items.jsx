@@ -19,7 +19,7 @@ class Items extends React.Component {
         const listClassName = this.props.isActive ? 'select__list select__list_display' : 'select__list'
         
         return (
-            <div className={listClassName}>
+            <div className={listClassName} style={this.props.listStyle}>
                 {items.map((value, index) => (
                     <Item 
                         inputValue={this.props.inputValue}
@@ -27,6 +27,7 @@ class Items extends React.Component {
                         selectItem={this.props.selectItem}
                         value={value}
                         multiple={this.props.multiple}
+                        itemStyle={this.props.itemStyle}
                          />
                 ))}
             </div>

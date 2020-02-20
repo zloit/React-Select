@@ -18,6 +18,7 @@
     cursor: pointer;
     background: none;
     font-size: inherit;
+    color: inherit;
 }
 
 .select__list {
@@ -28,6 +29,8 @@
     background-color: #fff;
     width: 100%;
     z-index: 1;
+    overflow-y: auto;
+    max-height: 40vh;
 }
 .select__list_display {
     display: flex;
@@ -99,4 +102,84 @@
     font-size: 0.6em;
     left: 0.3em;
     opacity: .5;
+}
+
+.modal {
+    opacity: 0; 
+    background: rgba(0,0,0,0.7); 
+    pointer-events: none; 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.modal_opened {
+    opacity: 1; 
+    pointer-events: auto; 
+    overflow-y: auto; 
+}
+.modal-wrapper {
+    margin:auto;
+    margin-top:25vh; 
+    max-width: 40vw;
+}
+
+.CSS-modal-inner {
+    position: relative;
+    background: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 0px; 
+}
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background:#f1f1f1;
+    position:relative;
+}
+.modal-title {
+    font-size: 18px; 
+    color:#555; 
+    font-weight:bold; 
+    line-height: 1.5; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modal-control {
+    font-size: 24px; 
+    color: #555; 
+    text-decoration: none;
+}
+.modal-headtext {
+    font-size: 18px; 
+    color: #555; 
+    line-height: 30px;
+}
+.modal-control:hover {
+    color: #000; 
+    cursor: pointer;
+}
+.modal-open {
+    padding: .8em;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    font-size: inherit;
+    font-family: Montserrat;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.modal-open:hover {
+    background-color: #f7907d;
+}
+
+.modal-content {
+    padding: 15px 20px;
 }
